@@ -2,7 +2,7 @@
     import { page } from '$app/stores';
 
     async function getLibrary() {
-    const res = await fetch(`http://ws.audioscrobbler.com/2.0/?method=library.getartists&api_key=a616b292b50e4f5ecb60671554c2965d&user=$ {$page.params.user}&format=json`);
+    const res = await fetch(`http://ws.audioscrobbler.com/2.0/?method=library.getartists&api_key=a616b292b50e4f5ecb60671554c2965d&user=${$page.params.user}&format=json`);
     const data = await res.json();
     if (res.ok) {
         return data.artists.artist;
