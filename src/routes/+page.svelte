@@ -1,5 +1,4 @@
 <script>
-	import Lastfm from "./Lastfm.svelte";
 
 </script>
 <h1>Welcome to SvelteKit</h1>
